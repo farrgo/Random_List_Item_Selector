@@ -1,8 +1,10 @@
 # This script randomly selects an item from a list of strings. It removes that item from the list
 # and continues to select items until the list is empty.
 
+
 # Create an empty ArrayList for dynamic list management
 $list = [System.Collections.ArrayList]@()
+
 
 # Function to add items to the list
 function Add-ListItem {
@@ -12,11 +14,13 @@ function Add-ListItem {
     $null = $list.Add($item)
 }
 
+
 # Add initial items
 Add-ListItem "Digital Servicing"
 Add-ListItem "Core Banking"
 Add-ListItem "Digital Sales"
 Add-ListItem "Corporate IT"
+Add-ListItem "Quality Assurance, Dev Ops, and Environment Management"
 Add-ListItem "AI and RPA"
 Add-ListItem "VCIB"
 
