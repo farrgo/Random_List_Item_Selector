@@ -44,8 +44,9 @@ function Select-RandomItem {
     return $selectedItem
 }
 
+
 # Function to print each item in an array on its own line.
-function Print-ListItems {
+function Write-ListItems {
     param (
         [array]$items
     )
@@ -54,6 +55,7 @@ function Print-ListItems {
         Write-Host $item
     }
 }
+
     
 # Main loop to select items until the list is empty.
 while ($list.Count -gt 0) {
@@ -62,7 +64,7 @@ while ($list.Count -gt 0) {
         Write-Host "`nPresenter: $selected"
 
         Write-Host "`nRemaining Presenters:"
-        Print-ListItems -items $list
+        Write-ListItems -items $list
         
         Write-Host "`nPress Space Bar to select another item or ESC to exit..."
         
